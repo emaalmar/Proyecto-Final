@@ -163,108 +163,143 @@ h1 {
 }
 
 .description {
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-    grid-gap: 2rem; 
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 20px; 
-    background-color: #F6F9FC;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #F6F9FC;
 
 }
 
-.text-content > div { 
-    margin-bottom: 300px; 
+.text-content>div {
+  margin-bottom: 25REM;
 }
 
-.h3-head-color1{
-    color: var(--clr-purple);
-    font-size: 0.7rem;
+.h3-head-color1 {
+  color: var(--clr-purple);
+  font-size: 0.7rem;
 }
 
 .h2-head-color1 {
-    font-size: 2.2rem;
-    color: var(--clr-black);
+  font-size: 2.2rem;
+  color: var(--clr-black);
 
 }
 
 .payments-logo {
-    position: relative;
-    padding-left: 25px;
-    font-size: 18px;
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
 }
 
 .payments-logo::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    background-image: url(/assets/payments-linea.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/payments-linea.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .billing-logo {
-    position: relative;
-    padding-left: 25px;
-    font-size: 18px;
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
 }
 
 .billing-logo::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    background-image: url(/assets/billing-linea.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url(/assets/billing-linea.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 
 
-p{
-    color: var(--clr-grey);
+p {
+  color: var(--clr-grey);
 }
-.links-description{
-    color: var(--clr-purple);
+
+.links-description {
+  color: var(--clr-purple);
 }
 
 .start-link {
-   color: var(--clr-white);
-   background-color:var(--clr-purple);
-   border-radius: 100vw;
-   padding: 4px;
+  color: var(--clr-white);
+  background-color: var(--clr-purple);
+  border-radius: 100vw;
+  padding: 4px;
 }
+
 .image-content {
-    display: flex;
-    flex-direction: column; 
-    gap: 1px; 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
- 
+
 
 .image-content .main-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    position: sticky;
-    top: 50px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: sticky;
+  top: 50px;
 
 }
 
-.image-content .small-image {
-    display: none;
-    /* width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    position: sticky;
-    top: 50px; */
+.image-content .small-image-1{
+  display: none;
+}
 
+.image-content .small-image-2{
+  display: none;
+}
+
+@media (max-width:680px) {
+  .description {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .text-content>div {
+    margin-bottom: 2rem;
+
+  }
+
+  .image-content {
+    flex-direction: column;
+    gap: 2rem;
+    /* align-items: flex-start; */
+
+  }
+
+  .image-content .main-image {
+    width: 50%;
+    position: static;
+
+  }
+
+ .image-content .small-image-1,
+    .image-content .small-image-2 {
+        display: none; 
+        width: 50%;
+
+}
 }
