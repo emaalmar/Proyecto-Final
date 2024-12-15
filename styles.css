@@ -162,33 +162,6 @@ h1 {
   }
 }
 
-/* .Description {
-    display: grid;
-    justify-content: center;
-    justify-items:center;
-    min-height: 500px;
-    grid-template-columns: 1fr 2.5fr;
-    max-width: 1200px;
-    grid-row-gap: 1000px 0px;
-    margin-inline:auto;
-    grid-column-gap: 30px;
-    
-    grid-template-areas:
-        "Solution-mod Picture-mobil"
-        "Payments Picture-mobil"
-        "Billing Picture-mobil"
-    ;
- 
-}
-
-.Solution-mod, .Payments, .Billing, .picture-mobil{
-    margin: 10px;
-    gap: 1rem;
-  }
-.little-screen-presentation-2, .little-screen-presentation-1 {
-    display: none;
-} */
-
 .description {
     display: grid;
     grid-template-columns: 1fr 2fr; 
@@ -229,7 +202,7 @@ h1 {
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    background-image: url(/assets/payments-linea.PNG);
+    background-image: url(/assets/payments-linea.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -249,7 +222,7 @@ h1 {
     transform: translateY(-50%);
     width: 16px;
     height: 16px;
-    background-image: url(/assets/billing-linea.PNG);
+    background-image: url(/assets/billing-linea.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50%;
