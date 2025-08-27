@@ -261,11 +261,11 @@ p {
 
 }
 
-.image-content .small-image-1{
+.small-image-1 {
   display: none;
 }
 
-.image-content .small-image-2{
+.small-image-2 {
   display: none;
 }
 
@@ -276,12 +276,15 @@ p {
     justify-content: center;
     text-align: left;
     gap: 1rem;
+
+    grid-template-areas: 1/2/3;
   }
 
   .text-content>div {
     margin-bottom: 2rem;
 
   }
+
 
   .image-content {
     flex-direction: column;
@@ -291,15 +294,15 @@ p {
   }
 
   .image-content .main-image {
-    width: 50%;
+    width: 100%;
     position: static;
 
   }
 
- .image-content .small-image-1,
-    .image-content .small-image-2 {
-        display: none; 
-        width: 50%;
+  .small-image-1,
+  .small-image-2 {
+    display: static;
+    width: 100%;
 
-}
+  }
 }
